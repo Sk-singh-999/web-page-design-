@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+</head>
+
+<style>
+     body{
+        display:flex;
+        justify-content:contents;
+        align-items: center ;
+        height:100vh
+     }
+    div.main-box { 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column;
+        padding: 0 80px;
+        border: solid rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.6);
+        margin-left: 500px;
+        border-radius: 20px;
+    }
+    .right label h2{
+        font-size: 25px;
+        color: black;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    .right  input {
+        margin: 0 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: 60px;
+        background: transparent;
+    }
+    textarea{
+        margin: 0 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: 60px;
+        background: transparent;
+    }
+    button {
+        width: 300px;
+        padding-top: 1px 10px;
+        margin: 10px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        background: transparent;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .right{
+        margin-bottom: 20px;
+    }
+    .app{
+        display:flex ;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    .app ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    .app ul li img{
+        display:flex ;
+        align-items: center;
+        justify-content: space-between;
+        height: 55px;
+        width: 60px;
+        margin: 0 5px;
+        border-radius: 100%;
+       
+    }
+
+</style>
+
+<body background="C:\Users\SHIVAM SINHG\Downloads\sunset-g2bac97bac_1920.jpg">
+
+    <div class="main-box">
+        <h1>CONTACT US</h1>
+    <div class="right">
+        <form id="contact" method="post">
+            <label for="name"><h2>Full Name</h2></label>
+            <input type="text" id="name" placeholder="your full name" required>
+            <label for="email"><h2>Email Address</h2></label>
+            <input type="email" id="email" placeholder="your email id" required>
+            <label for="message"><h2>Message</h2></label>
+            <textarea rows="6" placeholder="your message" id="message" name="message" required></textarea><br>
+            <button type="submit" id="submit" name="submit">Send</button>
+            <div class="app"><ul>
+                <li><a href="https://wa.me/8401846079"><img src="C:\Users\SHIVAM SINHG\Desktop\web\wb.jpeg"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100056355145787"><img src="C:\Users\SHIVAM SINHG\Desktop\web\fb.png"></a></li>
+                <li><a href="https://instagram.com/shivam_singh_13_?igshid=YmMyMTA2M2Y="><img src="C:\Users\SHIVAM SINHG\Desktop\web\insta.jpeg"></a></li>
+                <li><a href="https://t.me/@s_tech966"><img src="C:\Users\SHIVAM SINHG\Desktop\web\tele.jpeg"></a></li>
+            </ul></div>
+        </form>
+        <div id="error"></div>
+        <div id="successfull"></div>
+    </div>
+    </div>
+           
+
+</body>
+
+</html>
